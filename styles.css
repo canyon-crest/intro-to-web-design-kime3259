@@ -58,7 +58,7 @@ p {
     border-right: 5px double white;
     text-align: justify;
 }
-#sidebar{
+.sidebar{
     background-color: #bdd;
     width: 25%;
     float: right;
@@ -87,7 +87,7 @@ p {
     #container{
         width: 90%;
     }
-    #sidebar{
+    .sidebar{
         display: none;
     }
 }
