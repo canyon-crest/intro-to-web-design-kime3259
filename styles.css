@@ -4,27 +4,24 @@ body{
     font-family: Arial;
 }   
 h1{
-    border: white, solid, 2px;
     text-align: center;
-    padding: 20px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    border-radius: 20px;
-    background-color: #9aa;
+
 }
 h2{
     text-align: center;
-    padding: 20px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 h3{
     margin-left: 30px;
     font-size: 30px;
+    text-align: center;
 }
 img{
     float: left;
     border: #fff, solid, 3px;
     border-radius: 15 px;
-    margin: 1%;
+    margin: 2%;
     width: 250px;
 }
 a:link{
@@ -41,12 +38,70 @@ a:hover{
 a:active{
     color: #fff;
 }
-#cca{
-    /*stuff*/
-}
+/*#cca{
+    stuff
+}*/
 
 p {
+    width: 90%;
     color: white;
     font-size: 20px;
+    line-height: 2em;
+    margin: 1%;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+#container{
+    width: 85%;
+    margin: 0 auto;
+    background-color: #9bb;
+    padding: 30px 20px 30px 20px;
+    border-left: 5px double white;
+    border-right: 5px double white;
+    text-align: justify;
+}
+#sidebar{
+    background-color: #bdd;
+    width: 300px;
+    float: right;
+    border: 2px solid white;
+    margin: 15px;
+    margin-top: 80px;
+}
+#titleb{
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 50%
+    border: 2px solid white;
+    border-radius: 20px;
+    background-color: #9bb;
+    border-color: white;
+}
+ @media (max-width: 1200px){
+    #container{
+        background-color: #699;
+        width: 800px;
+    }
+}
+@media (max-width: 992px){
+    #container{
+        width: 100%
+    }
+    #container, p, h3{
+        margin: 0;
+        padding: 0;
+    }
+}
+@media (max-width: 768px){
+    #sidebar{
+        display: none;
+    }
+    img{
+        clear:both;
+        border: none;
+        width: 95%;
+    }
+    h3{
+        margin: 15 auto;
+    }
 }
