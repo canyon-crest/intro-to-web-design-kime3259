@@ -20,7 +20,6 @@ h3{
 img{
     float: left;
     border: #fff, solid, 3px;
-    border-radius: 15 px;
     margin: 2%;
     width: 250px;
 }
@@ -47,30 +46,31 @@ p {
     color: white;
     font-size: 20px;
     line-height: 2em;
-    margin: 1%;
+    margin: 1% auto;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 #container{
     width: 85%;
     margin: 0 auto;
     background-color: #9bb;
-    padding: 30px 20px 30px 20px;
+    padding: 1% 2%;
     border-left: 5px double white;
     border-right: 5px double white;
     text-align: justify;
 }
 #sidebar{
     background-color: #bdd;
-    width: 300px;
+    width: 25%;
     float: right;
     border: 2px solid white;
     margin: 15px;
-    margin-top: 80px;
 }
 #titleb{
     padding: 10px;
     padding-left: 30px;
     padding-right: 30px;
+    margin-right: 100px;
+    margin-left: 100px;
     width: 50%
     border: 2px solid white;
     border-radius: 20px;
@@ -80,22 +80,18 @@ p {
  @media (max-width: 1200px){
     #container{
         background-color: #699;
-        width: 800px;
+        width: 90%;
     }
 }
 @media (max-width: 992px){
     #container{
-        width: 100%
+        width: 90%;
     }
-    #container, p, h3{
-        margin: 0;
-        padding: 0;
-    }
-}
-@media (max-width: 768px){
     #sidebar{
         display: none;
     }
+}
+@media (max-width: 768px){
     img{
         clear:both;
         border: none;
