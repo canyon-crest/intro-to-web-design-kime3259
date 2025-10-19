@@ -1,12 +1,10 @@
 body{
     background-color: #7aa;
     color: #fff;
-    font-family: Arial;
 }   
 h1{
     text-align: center;
-    font: 50px 'Lucida Sans', serif;
-
+    font: bold 50px 'Lucida Sans Regular', serif;
 }
 h2{
     text-align: center;
@@ -14,14 +12,16 @@ h2{
 }
 h3{
     margin-left: 30px;
+    margin-top: 60px;
+    margin-bottom: 10px;
     font: bold 30px 'Lucida Sans', serif;
     text-align: center;
 }
 img{
     float: left;
     border: #fff, solid, 3px;
-    margin: 2%;
-    width: 250px;
+    margin: 15px 20px 5px 2%;
+    width: 300px;
 }
 a:link{
     color: rgb(130, 255, 255);
@@ -41,7 +41,7 @@ a:active{
     stuff
 }*/
 
-p {
+p{
     width: 90%;
     color: white;
     font-size: 20px;
@@ -52,10 +52,11 @@ p {
 #container{
     width: 85%;
     margin: 0 auto;
+    margin-bottom: 30px;
     background-color: #9bb;
     padding: 1% 2%;
-    border-left: 5px double white;
-    border-right: 5px double white;
+    border-left: 10px double white;
+    border-right: 10px double white;
     text-align: justify;
 }
 #sidebar{
@@ -63,21 +64,22 @@ p {
     width: 25%;
     float: right;
     border: 2px solid white;
-    margin: 15px;
-    margin-right: 0 auto;
+    margin: 15px 2% 5px 20px;
+    font: 15px 'Lucida Sans', serif;
     h3{
         font-size: 20px;
-        text-align: center justify;
+        margin: 15px;
+        text-align: justify center;
+        margin-top: 20px;
     }
 }
 #titleb{
     padding: 10px;
     padding-left: 30px;
     padding-right: 30px;
-    margin-right: 100px;
-    margin-left: 100px;
-    width: 50%
-    border: 2px solid white;
+    margin-right: 15%;
+    margin-left: 15%;
+    margin-top: 30px;
     border-radius: 20px;
     background-color: #9bb;
     border-color: white;
