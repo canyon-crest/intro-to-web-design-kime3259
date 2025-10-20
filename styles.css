@@ -1,21 +1,33 @@
 body{
-    background-color: #7aa;
+    background-color: #6aa;
     color: #fff;
 }   
 h1{
     text-align: center;
-    font: bold 50px 'Lucida Sans Regular';
+    font: bold 50px 'Lucida Sans';
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 h2{
     text-align: center;
     font: 25px 'Lucida Sans';
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 h3{
-    margin-left: 30px;
+    margin-left: 7%;
     margin-top: 60px;
     margin-bottom: 10px;
-    font: bold 30px 'Lucida Sans';
-    text-align: center;
+    font: bold 35px 'Lucida Sans';
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 130px;
+    background-color: #7bb;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-left: solid 20px aquamarine;
+    border-radius: 15px;
+
+}
+h3:hover{
+    color: aquamarine;
 }
 img{
     float: left;
@@ -53,7 +65,7 @@ p{
     width: 85%;
     margin: 0 auto;
     margin-bottom: 30px;
-    background-color: #9bb;
+    background-color: #8bb;
     padding: 1% 2%;
     border-left: 10px double white;
     border-right: 10px double white;
@@ -69,8 +81,14 @@ p{
     h3{
         font-size: 20px;
         margin: 15px;
+        width: 75%;
         text-align: justify center;
         margin-top: 20px;
+        background: none;
+        border-left: none;
+        padding-left: 0px auto;
+        padding-right: 10px;
+        border-radius: 0px;
     }
 }
 #titleb{
@@ -86,7 +104,7 @@ p{
 }
  @media (max-width: 1200px){
     #container{
-        background-color: #699;
+        background-color: #599;
         width: 90%;
     }
 }
