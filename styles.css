@@ -1,18 +1,37 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand');
 @import url('https://fonts.googleapis.com/css?family=Raleway');
+:root{
+    --white: #fff;
+    --h1: #ffb;
+    --background: #5aa;
+    --h3back: #7bb;
+    --highlight: aquamarine;
+    --link: rgb(130, 255, 255);
+    --visited: aqua;
+    --containerback: #8bb;
+    --containerbord: #ecf;
+    --sideback: #9db;
+    --sidebord: #8cb;
+    --titleback: #8cc;
+    --mediacontainerback: #599;
+    --mediahighlight: #7db;
+    --mediasidebord: #7ba;
+    --buttonbord: #f65;
+    --buttonback: #fa4;
+    --buttontext: #ff0;
+}
 body{
-    background-color: #5aa;
-    color: #fff;
+    background-color: var(--background);
+    color: var(--white);
 }   
 h1{
     text-align: center;
-    color: #ffb;
+    color: var(--h1);
     font: bold 50px 'Quicksand';
 }
 h2{
     text-align: center;
-    font: 25px 'Lucida Sans';
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font: 25px 'Raleway';
 }
 h3{
     margin-left: 7%;
@@ -20,40 +39,40 @@ h3{
     margin-bottom: 10px;
     font: bold 35px 'Quicksand';
     width: 110px;
-    background-color: #7bb;
+    background-color: var(--h3back);
     padding-left: 20px;
     padding-right: 20px;
-    border-left: solid 20px aquamarine;
+    border-left: solid 20px var(--highlight);
     border-radius: 15px;
 
 }
 h3:hover{
-    color: aquamarine;
+    color: var(--highlight);
 }
 img{
     float: left;
-    border: aquamarine, solid, 4px;
+    border: var(--highlight), solid, 4px;
     margin: 15px 20px 5px 2%;
     width: 300px;
     border-radius: 15px;
 }
 a:link{
-    color: rgb(130, 255, 255);
+    color: var(--link);
     text-decoration: none;
 }
 a:visited{
-    color: aqua;
+    color: var(--visited);
 }
 a:hover{
-    color: #fff;
+    color: var(--white);
     text-decoration: underline;
 }
 a:active{
-    color: #fff;
+    color: var(--white);
 }
 p{
     width: 90%;
-    color: white;
+    color: var(--white);
     font-size: 20px;
     line-height: 2em;
     margin: 1% auto;
@@ -61,7 +80,7 @@ p{
 }
 .highlight{
     font-weight: 700;
-    background: #5aa;
+    background: var(--background);
     padding: 2px 6px;
     border-radius: 6px;
 }
@@ -72,17 +91,17 @@ p{
     width: 85%;
     margin: 0 auto;
     margin-bottom: 30px;
-    background-color: #8bb;
+    background-color: var(--containerback);
     padding: 1% 2%;
-    border-left: 10px double #ecf;
-    border-right: 10px double #ecf;
+    border-left: 10px double var(--containerbord);
+    border-right: 10px double var(--containerbord);
     text-align: justify;
 }
 #sidebar{
-    background-color: #9db;
+    background-color: var(--sideback);
     width: 25%;
     float: right;
-    border: 6px solid #8cb;
+    border: 6px solid var(--sidebord);
     border-radius: 15px;
     margin: 15px 2% 5px 20px;
     font: 15px 'Lucida Sans';
@@ -108,26 +127,21 @@ p{
     margin-left: 15%;
     margin-top: 30px;
     border-radius: 20px;
-    background-color: #8cc;
-    border-color: white;
+    background-color: var(--titleback);
+    border-color: var(--white);
 }
 @media (max-width: 1200px){
     #container{
-        background-color: #599;
+        background-color: var(--mediacontainerback);
         width: 90%;
     }
     .highlight{
-        font-weight: 700;
-        background: #7db;
+        background: var(--mediahighlight);
         padding: 2px 6px;
         border-radius: 6px;
     }
     #sidebar{
-        background-color: #9db;
-        h3{
-            color: #ffb;
-        }
-        border-color: #7ba;
+        border-color: var(--mediasidebord);
     }
 }
 @media (max-width: 992px){
@@ -147,4 +161,52 @@ p{
     h3{
         margin: 15 auto;
     }
+}
+.visually-hidden{
+    position: absolute;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+.palette-button{
+    opacity: 0.75;
+    display: block;
+    margin: 24px 0px auto;
+    padding: 15px;
+    border-radius: 10px;
+    background: var(--buttonback);
+    color: var(--buttontext);
+    font: bold 20px 'Quicksand';
+    border: 2px solid var(--buttonbord);
+    text-align: center;
+    position: fixed;
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20%;
+}
+.palette-button:hover{
+    background: var(--buttontext);
+    color: var(--buttonback);
+}
+body:has(#paletteSwitch:checked){
+    --white: #440;
+    --h1: #afb;
+    --background: #fe6;
+    --h3back: #fa4;
+    --highlight: #f65;
+    --link: #f60;
+    --visited: #f00;
+    --containerback: #fb3;
+    --containerbord: #fd3;
+    --sideback: #fd6;
+    --sidebord: #fc4;
+    --titleback: #fc4;
+    --mediacontainerback: #ff8;
+    --mediahighlight: #fc4;
+    --mediasidebord: #fe6;
+    --buttonbord: #5aa;
+    --buttonback: aquamarine;
+    --buttontext: #eaf;
 }
