@@ -32,9 +32,10 @@ h3:hover{
 }
 img{
     float: left;
-    border: #fff, solid, 3px;
+    border: aquamarine, solid, 4px;
     margin: 15px 20px 5px 2%;
     width: 300px;
+    border-radius: 15px;
 }
 a:link{
     color: rgb(130, 255, 255);
@@ -59,7 +60,13 @@ p{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .highlight{
-    background-color: yellow;
+    font-weight: 700;
+    background: #5aa;
+    padding: 2px 6px;
+    border-radius: 6px;
+}
+.bold{
+    font-weight: bold;
 }
 #container{
     width: 85%;
@@ -67,15 +74,16 @@ p{
     margin-bottom: 30px;
     background-color: #8bb;
     padding: 1% 2%;
-    border-left: 10px double white;
-    border-right: 10px double white;
+    border-left: 10px double #ecf;
+    border-right: 10px double #ecf;
     text-align: justify;
 }
 #sidebar{
-    background-color: #bdd;
+    background-color: #9db;
     width: 25%;
     float: right;
-    border: 2px solid white;
+    border: 6px solid #8cb;
+    border-radius: 15px;
     margin: 15px 2% 5px 20px;
     font: 15px 'Lucida Sans';
     padding-right: 25px;
@@ -107,6 +115,19 @@ p{
     #container{
         background-color: #599;
         width: 90%;
+    }
+    .highlight{
+        font-weight: 700;
+        background: #7db;
+        padding: 2px 6px;
+        border-radius: 6px;
+    }
+    #sidebar{
+        background-color: #9db;
+        h3{
+            color: #ffb;
+        }
+        border-color: #7ba;
     }
 }
 @media (max-width: 992px){
