@@ -1,25 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
 body{
-    background-color: #6aa;
+    background-color: #5aa;
     color: #fff;
 }   
 h1{
     text-align: center;
     color: #ffb;
-    font: bold 50px 'Lucida Sans';
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font: bold 50px 'Quicksand';
 }
 h2{
     text-align: center;
     font: 25px 'Lucida Sans';
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 h3{
     margin-left: 7%;
     margin-top: 60px;
     margin-bottom: 10px;
-    font: bold 35px 'Lucida Sans';
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    width: 132px;
+    font: bold 35px 'Quicksand';
+    width: 110px;
     background-color: #7bb;
     padding-left: 20px;
     padding-right: 20px;
@@ -50,10 +50,6 @@ a:hover{
 a:active{
     color: #fff;
 }
-/*#cca{
-    stuff
-}*/
-
 p{
     width: 90%;
     color: white;
@@ -61,6 +57,9 @@ p{
     line-height: 2em;
     margin: 1% auto;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.highlight{
+    background-color: yellow;
 }
 #container{
     width: 85%;
@@ -79,7 +78,7 @@ p{
     border: 2px solid white;
     margin: 15px 2% 5px 20px;
     font: 15px 'Lucida Sans';
-    padding-right: 20px;
+    padding-right: 25px;
     h3{
         font-size: 20px;
         margin: 15px;
@@ -101,18 +100,13 @@ p{
     margin-left: 15%;
     margin-top: 30px;
     border-radius: 20px;
-    background-color: #9bb;
+    background-color: #8cc;
     border-color: white;
 }
 @media (max-width: 1200px){
     #container{
         background-color: #599;
         width: 90%;
-    }
-}
-@media (max-width: 1020px) and (min-width: 993px){
-    #body{
-        background-color: white;
     }
 }
 @media (max-width: 992px){
